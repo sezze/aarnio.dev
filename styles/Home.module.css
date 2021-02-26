@@ -1,0 +1,40 @@
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nameTitle {
+  background: linear-gradient(-20deg, #4c00ff, #00b7ff);
+  background-clip: text;
+  line-height: 0.85;
+  font-size: 4rem;
+  color: #206eff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  user-select: none;
+  animation: enter 3s both ease-out;
+}
+
+.lastName {
+  font-size: 5.8rem;
+}
+
+.main {
+  padding: 5rem 1rem;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: enter 1s both ease-out;
+}

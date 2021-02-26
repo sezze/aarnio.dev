@@ -1,0 +1,26 @@
+.skills {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1200px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+}
+
+.skillGroup > h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.skillList {
+  padding: 0;
+}
+
+.skillList > li {
+  font-size: 1.25rem;
+  list-style: none;
+}
